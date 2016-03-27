@@ -5,26 +5,26 @@ class bashrc::config inherits bashrc {
     if($bashrc::manage_skeltons) {
       #SKELTON directory
       file { $bashrc::skeldirectory:
-        ensure   => 'directory',
-        owner    => 'root',
-        group    => 'root',
-        mode     => '0755',
-        purge    => true,
+        ensure => 'directory',
+        owner  => 'root',
+        group  => 'root',
+        mode   => '0755',
+        purge  => true,
       }
 
       file { "${bashrc::skeldirectory}/.bash_logout":
-        ensure   => 'file',
-        owner    => 'root',
-        group    => 'root',
-        mode     => '0644',
+        ensure  => 'file',
+        owner   => 'root',
+        group   => 'root',
+        mode    => '0644',
         content => template("${module_name}/skel/bash_logout.erb"),
       }
 
       file { "${bashrc::skeldirectory}/.bashrc":
-        ensure   => 'file',
-        owner    => 'root',
-        group    => 'root',
-        mode     => '0644',
+        ensure  => 'file',
+        owner   => 'root',
+        group   => 'root',
+        mode    => '0644',
         content => template("${module_name}/skel/bashrc_${::osfamily}.erb"),
       }
 
@@ -36,10 +36,10 @@ class bashrc::config inherits bashrc {
             }
 
             file { "${bashrc::skeldirectory}/.bash_profile":
-              ensure   => 'file',
-              owner    => 'root',
-              group    => 'root',
-              mode     => '0644',
+              ensure  => 'file',
+              owner   => 'root',
+              group   => 'root',
+              mode    => '0644',
               content => template("${module_name}/skel/profile.erb"),
             }
 
@@ -57,10 +57,10 @@ class bashrc::config inherits bashrc {
             }
 
             file { "${bashrc::skeldirectory}/.profile":
-              ensure   => 'file',
-              owner    => 'root',
-              group    => 'root',
-              mode     => '0644',
+              ensure  => 'file',
+              owner   => 'root',
+              group   => 'root',
+              mode    => '0644',
               content => template("${module_name}/skel/profile.erb"),
             }
         }
@@ -71,18 +71,18 @@ class bashrc::config inherits bashrc {
   if($bashrc::manage_etc_files) {
     #/etc/ directory
     file { $bashrc::etcbashfile:
-      ensure   => 'file',
-      owner    => 'root',
-      group    => 'root',
-      mode     => '0644',
+      ensure  => 'file',
+      owner   => 'root',
+      group   => 'root',
+      mode    => '0644',
       content => template($bashrc::template_etc_bashrc),
     }
 
     file { '/etc/profile':
-      ensure   => 'file',
-      owner    => 'root',
-      group    => 'root',
-      mode     => '0644',
+      ensure  => 'file',
+      owner   => 'root',
+      group   => 'root',
+      mode    => '0644',
       content => template($bashrc::template_etc_profile),
     }
   }
@@ -202,10 +202,10 @@ class bashrc::config inherits bashrc {
         #Local BashRC
         if($managelocalbashrc) {
             file { "${userdirectory}/.bashrc":
-              ensure   => 'file',
-              owner    => $current_user,
-              group    => $current_user,
-              mode     => '0644',
+              ensure  => 'file',
+              owner   => $current_user,
+              group   => $current_user,
+              mode    => '0644',
               content => template("${module_name}/skel/bashrc_${::osfamily}.erb"),
             }
         }
