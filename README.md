@@ -81,7 +81,7 @@ A class for managing the bashrc configuration files
 
 ##### `aliases`
 ##### `bashrcdirectory`
-##### `$bashrcd_puppet_filename`
+##### `bashrcd_puppet_filename`
 ##### `etcbashfile`
 ##### `extensions`
 ##### `grep_color_value`
