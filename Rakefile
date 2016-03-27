@@ -1,11 +1,7 @@
 require 'metadata-json-lint/rake_task'
 require 'puppet-lint/tasks/puppet-lint'
 require 'puppet-syntax/tasks/puppet-syntax'
-require 'puppet_blacksmith/rake_tasks'
 require 'puppetlabs_spec_helper/rake_tasks'
-require 'rubocop/rake_task'
-
-RuboCop::RakeTask.new
 
 PuppetLint.configuration.log_format = '%{path}:%{linenumber}:%{check}:%{KIND}:%{message}'
 PuppetLint.configuration.fail_on_warnings = true
@@ -29,10 +25,5 @@ RSpec::Core::RakeTask.new(:acceptance) do |t|
   t.pattern = 'spec/acceptance'
 end
 
-desc 'Run metadata_lint, lint, syntax, and spec tests.'
-task test: [
-  :metadata_lint,
-  :lint,
-  :syntax,
-  :spec,
-]
+task :default => [:clean, :validate, :lint, :spec]
+
