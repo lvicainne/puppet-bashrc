@@ -1,3 +1,5 @@
+# == Class: bashrc::config
+#
 class bashrc::config inherits bashrc {
 
     if($bashrc::manage_skeltons) {

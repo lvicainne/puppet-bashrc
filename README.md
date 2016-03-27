@@ -4,7 +4,7 @@
 
 1. [Description](#description)
 2. [Setup - The basics of getting started with BashRC](#setup)
-    * [What bashrc affects](#what-bashrc-affects)
+    * [What bashrc module affects](#what-bashrc-module-affects)
     * [Setup requirements](#setup-requirements)
     * [Beginning with bashrc](#beginning-with-bashrc)
 3. [Usage - Configuration options and additional functionality](#usage)

@@ -1,4 +1,13 @@
+# == Class: bashrc::params
+#
 class bashrc::params {
+  $package_name = $::osfamily ? {
+    default => 'bash',
+  }
+
+  $package_list = $::osfamily ? {
+    default => ['bash-completion'],
+  }
 
   $selected_pager = 'LESS'
   $selected_editor = 'VIM'

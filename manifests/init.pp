@@ -4,6 +4,10 @@
 #
 #Please see the README.md
 class bashrc(
+  $package_ensure           = 'present',
+  $package_name             = $bashrc::params::package_name,
+  $package_list             = $bashrc::params::package_list,
+  
   $bashrcdirectory          = $bashrc::params::bashrcdirectory,
   $etcbashfile              = $bashrc::params::etcbashfile,
   $skeldirectory            = $bashrc::params::skeldirectory,
@@ -33,7 +37,9 @@ class bashrc(
 
 
   )inherits bashrc::params {
-
+  validate_re($package_ensure, '^(absent|latest|present|purged)$')
+  validate_string($package_name)
+  
   validate_absolute_path($bashrcdirectory)
   validate_absolute_path($etcbashfile)
   validate_absolute_path($skeldirectory)
@@ -62,9 +68,8 @@ class bashrc(
   #validate_absolute_path($template_etc_profile)
 
   anchor { 'bashrc::begin': } ->
-  #class{'rkhunter::install': } ->
+  class{'bashrc::install': } ->
   class{'bashrc::config': } ->
-  #class{'rkhunter::service': } ->
   anchor { 'bashrc::end': }
 
 }
