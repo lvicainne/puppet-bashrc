@@ -1,5 +1,7 @@
 # BashRC
 
+[![Build Status](https://travis-ci.org/lvicainne/lvicainne-bashrc.svg?branch=master)](https://travis-ci.org/lvicainne/lvicainne-bashrc)
+
 #### Table of Contents
 
 1. [Description](#description)
