@@ -3,7 +3,7 @@
 #### Table of Contents
 
 1. [Description](#description)
-2. [Setup - The basics of getting started with BashRC]](#setup)
+2. [Setup - The basics of getting started with BashRC](#setup)
     * [What bashrc affects](#what-bashrc-affects)
     * [Setup requirements](#setup-requirements)
     * [Beginning with bashrc](#beginning-with-bashrc)
@@ -111,7 +111,5 @@ You are pleased to fork this module and adapt it for you needs. I am open to any
 
 ## Release Notes/Contributors/Etc. 
 
-* v0.0.3 Improve some documentation parts
-* v0.0.2 Improve some documentation parts
 * v0.0.1 First Running version
 
