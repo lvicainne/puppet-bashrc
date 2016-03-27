@@ -1,0 +1,56 @@
+{
+    "name": "lvicainne-bashrc",
+    "version": "0.0.1",
+    "author": "lvicainne",
+    "license": "Apache-2.0",
+    "summary": "Configure the BashRC and Profile",
+    "description": "Use this module if you want to uniformize BashRc and Profile for the Machine level and for the skelton.",
+    "source": "https://github.com/lvicainne/lvicainne-bashrc",
+    "project_page": "https://forge.puppetlabs.com/lvicainne/bashrc",
+    "issues_url": "https://github.com/lvicainne/lvicainne-bashrc/issues",
+    "tags": ["bashrc", "profile", "skel", "bash"],
+    "operatingsystem_support": [
+        {
+            "operatingsystem": "RedHat",
+            "operatingsystemrelease": [
+                "5",
+                "6",
+                "7"
+            ]
+        },
+        {
+            "operatingsystem": "CentOS",
+            "operatingsystemrelease": [
+                "5",
+                "6",
+                "7"
+            ]
+        },
+        {
+            "operatingsystem": "Debian",
+            "operatingsystemrelease": [
+                "6",
+                "7",
+                "8"
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "name": "puppetlabs/stdlib",
+            "version_requirement": ">= 3.2.0 < 5.0.0"
+        },
+        {
+            "name": "puppetlabs-concat",
+            "version_requirement": ">= 1.0.0"
+        }
+    ],
+    "requirements": [
+        {
+            "name": "puppet",
+            "version_requirement": ">= 4.0.0 < 5.0.0"
+        }
+    ],
+    "data_provider": "none"
+}
+
