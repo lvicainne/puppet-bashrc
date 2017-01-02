@@ -27,7 +27,7 @@ class bashrc::params {
 
   $ps1_default              = '\u@\h:\w\$ '
   $ps1_colored              = '\[\033[38;5;1m\]\$?\[$(tput sgr0)\],\[\033[38;5;214m\]\t\[$(tput sgr0)\],\[\033[38;5;34m\]\u@\H\[$(tput sgr0)\]:\[\033[38;5;27m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\\$\[$(tput sgr0)\] '
-  $ps1_screen               = '\[\033[38;5;1m\]\$?\[$(tput sgr0)\],\[\033[38;5;214m\]\d \t [$(tput sgr0)\],\u@\H\[$(tput sgr0)\]:\[\033[38;5;27m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\\$\[$(tput sgr0)\] '
+  $ps1_screen               = '\[\033[38;5;1m\]\$?\[$(tput sgr0)\],\[\033[38;5;214m\]\d \t\[$(tput sgr0)\],\[\033[38;5;214m\]\u@\H\[$(tput sgr0)\]:\[\033[38;5;27m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\\$\[$(tput sgr0)\] '
 
   $template_etc_bashrc      = "${module_name}/etc/bashrc.erb"
   $template_etc_profile     = "${module_name}/etc/profile.erb"

@@ -113,5 +113,7 @@ You are pleased to fork this module and adapt it for you needs. I am open to any
 
 ## Release Notes/Contributors/Etc. 
 
+* v0.0.3 Enable autocompletion
+* v0.0.2 Improve the history command with datetime, improve the order of the bashrc using concat
 * v0.0.1 First Running version
 

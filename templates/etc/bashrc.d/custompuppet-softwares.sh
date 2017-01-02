@@ -7,3 +7,4 @@ EDITOR="<%= @selected_editor %>"
 GREP_COLOR="<%= @grep_color_value %>"
 MAIL="<%= @maildirectory %>/$USER"
 HISTSIZE=1000
+export HISTTIMEFORMAT="[%d/%m/%y %T] "

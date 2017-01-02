@@ -122,26 +122,31 @@ class bashrc::config inherits bashrc {
       concat::fragment { '/etc/bashrc.d/basicaliases':
         target  => $profiled_path,
         content => template("${module_name}/etc/bashrc.d/custompuppet-basicaliases.sh"),
+        order   => '02'
       }
 
       concat::fragment { '/etc/bashrc.d/coloraliases':
         target  => $profiled_path,
         content => template("${module_name}/etc/bashrc.d/custompuppet-coloraliases.sh"),
+        order   => '03'
       }
 
       concat::fragment { '/etc/bashrc.d/softwares':
         target  => $profiled_path,
         content => template("${module_name}/etc/bashrc.d/custompuppet-softwares.sh"),
+        order   => '04'
       }
 
       concat::fragment { '/etc/bashrc.d/ps1':
         target  => $profiled_path,
         content => template("${module_name}/etc/bashrc.d/custompuppet-ps1.sh"),
+        order   => '05'
       }
 
       concat::fragment { '/etc/bashrc.d/extensions':
         target  => $profiled_path,
         content => template("${module_name}/etc/bashrc.d/custompuppet-extensions.sh"),
+        order   => '06'
       }
   }
 
