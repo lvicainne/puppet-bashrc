@@ -1,13 +1,13 @@
 {
-    "name": "lvicainne-bashrc",
-    "version": "0.0.3",
+    "name": "puppet-bashrc",
+    "version": "0.0.4",
     "author": "lvicainne",
     "license": "Apache-2.0",
     "summary": "Configure the BashRC and Profile",
     "description": "Use this module if you want to uniformize BashRc and Profile for the Machine level and for the skelton.",
-    "source": "https://github.com/lvicainne/lvicainne-bashrc",
+    "source": "https://github.com/lvicainne/puppet-bashrc",
     "project_page": "https://forge.puppetlabs.com/lvicainne/bashrc",
-    "issues_url": "https://github.com/lvicainne/lvicainne-bashrc/issues",
+    "issues_url": "https://github.com/lvicainne/puppet-bashrc/issues",
     "tags": ["bashrc", "profile", "skel", "bash"],
     "operatingsystem_support": [
         {
