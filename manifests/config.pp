@@ -110,7 +110,7 @@ class bashrc::config inherits bashrc {
         ensure => 'present',
         owner  => 'root',
         group  => 'root',
-        mode   => '644'
+        mode   => '0644'
       }
 
       concat::fragment { '/etc/bashrc.d/colors':
