@@ -1,6 +1,6 @@
 # BashRC
 
-[![Build Status](https://travis-ci.org/lvicainne/lvicainne-bashrc.svg?branch=master)](https://travis-ci.org/lvicainne/puppet-bashrc)
+[![Build Status](https://travis-ci.org/lvicainne/puppet-bashrc.svg?branch=master)](https://travis-ci.org/lvicainne/puppet-bashrc)
 
 #### Table of Contents
 
