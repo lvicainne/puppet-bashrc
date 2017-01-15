@@ -196,6 +196,8 @@ class bashrc::config inherits bashrc {
         if($bashrc::selected_editor_path) {
             file { "${userdirectory}/.selected_editor":
                 ensure  => 'file',
+                owner   => $current_user,
+                group   => $current_user,
                 content => template("${module_name}/user/selected_editor.erb"),
             }
         } else {
