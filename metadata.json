@@ -1,6 +1,6 @@
 {
     "name": "lvicainne-bashrc",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "author": "lvicainne",
     "license": "Apache-2.0",
     "summary": "Configure the BashRC and Profile",
@@ -50,7 +50,6 @@
             "name": "puppet",
             "version_requirement": ">= 4.0.0 < 5.0.0"
         }
-    ],
-    "data_provider": "none"
+    ]
 }
 
