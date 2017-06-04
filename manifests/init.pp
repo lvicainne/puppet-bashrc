@@ -75,9 +75,9 @@ class bashrc(
   #validate_absolute_path($template_etc_bashrc)
   #validate_absolute_path($template_etc_profile)
 
-  anchor { 'bashrc::begin': } 
-  -> class{'bashrc::install': } 
-  -> class{'bashrc::config': } 
+  anchor { 'bashrc::begin': }
+  -> class{'bashrc::install': }
+  -> class{'bashrc::config': }
   -> anchor { 'bashrc::end': }
 
 }
