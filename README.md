@@ -102,6 +102,10 @@ A class for managing the bashrc configuration files
 ##### `template_etc_bashrc`
 ##### `template_etc_profile`
 ##### `users`
+##### `history_control`
+##### `history_size`
+##### `history_file_size`
+##### `history_time_format`
 
 ## Limitations
 
