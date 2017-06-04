@@ -35,6 +35,10 @@ class bashrc(
   $template_etc_bashrc      = $bashrc::params::template_etc_bashrc,
   $template_etc_profile     = $bashrc::params::template_etc_profile,
 
+  $history_control          = $bashrc::params::history_control,
+  $history_size             = $bashrc::params::history_size,
+  $history_file_size        = $bashrc::params::history_file_size,
+  $history_time_format      = $bashrc::params::history_time_format,
 
   )inherits bashrc::params {
   validate_re($package_ensure, '^(absent|latest|present|purged)$')
@@ -64,12 +68,16 @@ class bashrc(
   validate_string($ps1_colored)
   validate_string($ps1_screen)
 
+  validate_string($history_control)
+  validate_string($history_size)
+  validate_string($history_file_size)
+  validate_string($history_time_format)
   #validate_absolute_path($template_etc_bashrc)
   #validate_absolute_path($template_etc_profile)
 
-  anchor { 'bashrc::begin': } ->
-  class{'bashrc::install': } ->
-  class{'bashrc::config': } ->
-  anchor { 'bashrc::end': }
+  anchor { 'bashrc::begin': } 
+  -> class{'bashrc::install': } 
+  -> class{'bashrc::config': } 
+  -> anchor { 'bashrc::end': }
 
 }

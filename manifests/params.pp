@@ -24,6 +24,10 @@ class bashrc::params {
   $manage_custom_bashrc     = true
   $manage_etc_files         = true
   $manage_skeltons          = true
+  $history_control          = 'ignoreboth'
+  $history_size             = '1000'
+  $history_file_size        = '2000'
+  $history_time_format      = '"[ %d/%m/%y %T ] "'
 
   $ps1_default              = '\u@\h:\w\$ '
   $ps1_colored              = '\[\033[38;5;1m\]\$?\[$(tput sgr0)\],\[\033[38;5;214m\]\t\[$(tput sgr0)\],\[\033[38;5;34m\]\u@\H\[$(tput sgr0)\]:\[\033[38;5;27m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\\$\[$(tput sgr0)\] '
