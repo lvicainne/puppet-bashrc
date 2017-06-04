@@ -117,6 +117,9 @@ You are pleased to fork this module and adapt it for you needs. I am open to any
 
 ## Release Notes/Contributors/Etc. 
 
+Thanks to contributirs : lvicainne, beckonconn 
+
+* v0.0.5 Adding in the ability to customize the bash history controls in the user bashrc. Also fixed the "WARNING: arrow should be on the right operands line" that would come up on puppet lint.
 * v0.0.4 Rename lvicainne-bashrc to puppet-bashrc
 * v0.0.3 Enable autocompletion
 * v0.0.2 Improve the history command with datetime, improve the order of the bashrc using concat
