@@ -19,7 +19,7 @@ unalias <%= myalias['name'] %>
 alias <%= myalias['name'] %>='<%= myalias['value'] %>'
 <%     end -%>
 <%   else -%>
-alias <%= name %>
+alias <%= myalias %>
 <%   end -%>
 <% end -%>
 
