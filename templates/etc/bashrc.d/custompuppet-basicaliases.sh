@@ -12,6 +12,14 @@ alias l='ls -CF'
 
 #Machine specific aliases
 <% @aliases.each do |myalias| -%>
+<%   if myalias.is_a?(Hash) -%>
+<%     if myalias['value'] == nil -%>
+unalias <%= myalias['name'] %>
+<%     else -%>
+alias <%= myalias['name'] %>='<%= myalias['value'] %>'
+<%     end -%>
+<%   else -%>
 alias <%= myalias %>
+<%   end -%>
 <% end -%>
 
