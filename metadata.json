@@ -6,7 +6,7 @@
     "summary": "Configure the BashRC and Profile",
     "description": "Use this module if you want to uniformize BashRc and Profile for the Machine level and for the skelton.",
     "source": "https://github.com/lvicainne/puppet-bashrc",
-    "project_page": "https://forge.puppetlabs.com/lvicainne/bashrc",
+    "project_page": "https://github.com/lvicainne/puppet-bashrc",
     "issues_url": "https://github.com/lvicainne/puppet-bashrc/issues",
     "tags": ["bashrc", "profile", "skel", "bash"],
     "operatingsystem_support": [
